@@ -671,7 +671,7 @@ int main()
 			case 1:  // Bill without GST
 				{
 					printf("\n\n - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ");
-					printf("\t\t\t\n\n----- Bill WithOut GST ");
+					printf("\n\n----- Bill WithOut GST ");
 					
 					printf("\t\t\t----- RestoHub -----\t\t");
 															
@@ -697,9 +697,9 @@ int main()
 					                int itemPrice = FC[j].price;
 					                int itemTotal = itemPrice * quantity;
 					                
-					                printf("____________________________________________________________________________________________________________________\n");	
+					                printf("\n____________________________________________________________________________________________________________________\n\n");	
 					
-					                printf("\t%d\t\t%s\t\t\t\t%d\t\t%d\t\t%d\n", FC[j].id, FC[j].food_name, FC[j].price, quantity, itemTotal);
+					                printf("\t%-5d\t%-50s\t%-15d\t%-15d\t%-7d\n", FC[j].id, FC[j].food_name, FC[j].price, quantity, itemTotal);
 					
 					                // Calculate total cost
 					                total_Bill += itemTotal;
@@ -744,7 +744,7 @@ int main()
 					                int itemPrice = FC[j].price;
 					                int itemTotal = itemPrice * quantity;
 								
-					                printf("\t%d\t\t%s\t\t\t\t%d\t\t%d\t\t%d\n", FC[j].id, FC[j].food_name, FC[j].price, quantity, itemTotal);
+					                printf("\t%-5d\t%-50s\t%-15d\t%-15d\t%-7d\n", FC[j].id, FC[j].food_name, FC[j].price, quantity, itemTotal);
 									
 					                // Calculate total bill
 					                Total_Gst_Bill += itemTotal;
